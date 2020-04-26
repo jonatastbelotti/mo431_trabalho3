@@ -4,7 +4,7 @@ Valor função: 0.00000000000001425092090918083015
 Número chamadas função: 16
 Número chamadas gradiente: 16
 Número de iterações: 13
-Tempo execução: 0.0024609565734863 segundos
+Tempo execução: 0.0020263195037842 segundos
 
 
 Método: BFGS não passando gradiente
@@ -13,4 +13,4 @@ Valor função: 0.00000000000000524612799295221203
 Número chamadas função: 64
 Número chamadas gradiente: 16
 Número de iterações: 13
-Tempo execução: 0.0025186538696289 segundos
+Tempo execução: 0.0022587776184082 segundos
