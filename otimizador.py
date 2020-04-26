@@ -55,12 +55,14 @@ class Otimizador():
         print("Ponto de mínimo: x=%.16f y=%.16f" % (self.ponto_final[0], self.ponto_final[1]))
         print("Valor função: %.32f" % self.valor_final)
 
-        if self.chamadas_func_obj:
-            print("Número chamadas função: %d" % self.chamadas_func_obj)
-        else:
-            print("Número chamadas função:")
-        if self.chamadas_gradiente:
-            print("Número chamadas gradiente: %d" % self.chamadas_gradiente)
-        else:
-            print("Número chamadas gradiente:")
+        for obj in [
+            {'texto': "Número chamadas função:", 'formato': "%d", 'valor': self.chamadas_func_obj},
+            {'texto': "Número chamadas gradiente:", 'formato': "%d", 'valor': self.chamadas_gradiente},
+            {'texto': "Número de iterações:", 'formato': "%d", 'valor': self.num_iteracoes}
+        ]:
+            if obj['valor']:
+                print((obj['texto'] + " " + obj['formato']) % (obj['valor']))
+            else:
+                print(obj['texto'])
+
         print("Tempo execução: %.16f segundos" % self.tempo_total)

@@ -11,7 +11,8 @@ class BOBYQA(Otimizador):
     def __init__(self):
         super().__init__()
 
-
+    # Documentação em https://numericalalgorithmsgroup.github.io/pybobyqa/build/html/userguide.html
+    # Exemplos em https://github.com/numericalalgorithmsgroup/pybobyqa/tree/master/examples
     def otimizar(self, p_inicial):
         self.ponto_inicial = np.array(p_inicial)
 
@@ -22,6 +23,7 @@ class BOBYQA(Otimizador):
         self.ponto_final = sol.x
         self.valor_final = sol.f
         self.chamadas_func_obj = sol.nf
+        self.num_iteracoes = sol.nruns
 
 
 

@@ -12,6 +12,7 @@ class ConjugadoGradiente(Otimizador):
         super().__init__()
 
 
+    # Documentação em https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html
     def otimizar(self, p_inicial):
         self.ponto_inicial = p_inicial
 
