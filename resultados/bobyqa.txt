@@ -4,4 +4,4 @@ Valor função: 0.00000000000000000000128770355468
 Número chamadas função: 58
 Número chamadas gradiente:
 Número de iterações: 1
-Tempo execução: 0.1725096702575684 segundos
+Tempo execução: 0.1631932258605957 segundos
