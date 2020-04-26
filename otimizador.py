@@ -13,8 +13,8 @@ class Otimizador():
         self.tempo_inicial = None
         self.tempo_final = None
         self.tempo_total = None
-        self.chamadas_func_obj = 0
-        self.chamadas_gradiente = 0
+        self.chamadas_func_obj = None
+        self.chamadas_gradiente = None
         self.num_iteracoes = None
 
 
@@ -54,6 +54,13 @@ class Otimizador():
         print("Método: %s" % self.NOME_METODO)
         print("Ponto de mínimo: x=%.16f y=%.16f" % (self.ponto_final[0], self.ponto_final[1]))
         print("Valor função: %.32f" % self.valor_final)
-        print("Número chamadas função: %d" % self.chamadas_func_obj)
-        print("Número chamadas gradiente: %d" % self.chamadas_gradiente)
+
+        if self.chamadas_func_obj:
+            print("Número chamadas função: %d" % self.chamadas_func_obj)
+        else:
+            print("Número chamadas função:")
+        if self.chamadas_gradiente:
+            print("Número chamadas gradiente: %d" % self.chamadas_gradiente)
+        else:
+            print("Número chamadas gradiente:")
         print("Tempo execução: %.16f segundos" % self.tempo_total)
