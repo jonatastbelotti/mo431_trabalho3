@@ -1,0 +1,16 @@
+Método: BFGS passando gradiente
+Ponto de mínimo: x=3.0000000176470176 y=2.0000000059979191
+Valor função: 0.00000000000001425092090918083015
+Número chamadas função: 16
+Número chamadas gradiente: 16
+Número de iterações: 13
+Tempo execução: 0.0024609565734863 segundos
+
+
+Método: BFGS não passando gradiente
+Ponto de mínimo: x=3.0000000111823382 y=2.0000000023500730
+Valor função: 0.00000000000000524612799295221203
+Número chamadas função: 64
+Número chamadas gradiente: 16
+Número de iterações: 13
+Tempo execução: 0.0025186538696289 segundos
