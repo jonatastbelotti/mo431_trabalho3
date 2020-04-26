@@ -1,0 +1,6 @@
+Método: Conjugado gradiente
+Ponto de mínimo: x=2.9999999999892628 y=1.9999999999893328
+Valor função: 0.00000000000000000000849075039610
+Número chamadas função: 17
+Número chamadas gradiente: 17
+Tempo execução: 0.0013635158538818 segundos

@@ -16,13 +16,14 @@ class ConjugadoGradiente(Otimizador):
         self.ponto_inicial = p_inicial
 
         self.iniciar_tempo()
-        resp = minimize(self.func_himmelblau, self.ponto_inicial, method="CG")
+        resp = minimize(self.func_himmelblau, self.ponto_inicial, method="CG", jac=self.gradiente_himmelblau)
         self.finalizar_tempo()
 
         self.ponto_final = resp.x
-        self.valor_final = self.func_himmelblau(self.ponto_final)
-        self.calculos_funcao = resp.nfev
-        self.num_iteracoes = self.chamadas_gradiente = resp.nit
+        self.valor_final = self.func_himmelblau(self.ponto_final, contar=False)
+        self.chamadas_func_obj = resp.nfev
+        self.chamadas_gradiente = resp.njev
+        self.num_iteracoes = resp.nit
         
 
 
