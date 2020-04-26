@@ -21,12 +21,5 @@ $ pip3 install -r requirements.txt
 ```
 
 
-## Execução
-Cada arquivo implementa um dos métodos de otimização específicados no trabalho:
-
-- ``conjugado_gradiente.py`` - Conjugado gradiente com ponto inicial em (4,4);
-
-
-
 ## Mantenedores
 - Jônatas Trabuco Belotti [jonatas.t.belotti@hotmail.com]
