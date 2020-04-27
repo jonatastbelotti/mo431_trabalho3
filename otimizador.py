@@ -78,7 +78,7 @@ class OtimizadorScipyMinimize(Otimizador):
         super().__init__()
     
 
-    def otimizar(self, p_inicial, triangulo=None, passar_gradiente=False):
+    def otimizar(self, p_inicial, passar_gradiente=False):
         self.ponto_inicial = p_inicial
         self.NOME_METODO = self.NOME_METODO + " PASSANDO GRADIENTE" if passar_gradiente else self.NOME_METODO + " NÃO PASSANDO GRADIENTE"
         self.func_gradiente = self.gradiente_himmelblau if passar_gradiente else None
@@ -89,7 +89,7 @@ class OtimizadorScipyMinimize(Otimizador):
 
         self.ponto_final = resp.x
         self.valor_final = self.func_himmelblau(self.ponto_final)
-        self.chamadas_func_obj = resp.nfev
-        self.chamadas_gradiente = resp.njev
-        self.num_iteracoes = resp.nit
+        self.chamadas_func_obj = resp.nfev if hasattr(resp, "nfev") else None
+        self.chamadas_gradiente = resp.njev if hasattr(resp, "njev") else None
+        self.num_iteracoes = resp.nit if hasattr(resp, "nit") else None
 
