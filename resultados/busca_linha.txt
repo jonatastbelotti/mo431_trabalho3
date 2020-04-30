@@ -1,0 +1,7 @@
+Método: Descida do gradiente com busca em linha
+Ponto de mínimo: x=-3.7793100679133858 y=-3.2831857998906258
+Valor função: 0.00000000000261291632915219589218
+Número chamadas função: 102
+Número chamadas gradiente: 15
+Número de iterações: 15
+Tempo execução: 0.0068168640136719 segundos
