@@ -4,7 +4,7 @@ from otimizador import OtimizadorScipyMinimize
 class BFGS(OtimizadorScipyMinimize):
 
     NOME_METODO = "BFGS"
-    SCIPY_METODO = "BFGS"
+    SCIPY_METODO = "L-BFGS-B"
 
     def __init__(self):
         super().__init__()
