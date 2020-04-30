@@ -78,13 +78,13 @@ class OtimizadorScipyMinimize(Otimizador):
         super().__init__()
     
 
-    def otimizar(self, p_inicial, passar_gradiente=False):
+    def otimizar(self, p_inicial, passar_gradiente=False, options=None):
         self.ponto_inicial = p_inicial
         self.NOME_METODO = self.NOME_METODO + " PASSANDO GRADIENTE" if passar_gradiente else self.NOME_METODO + " NÃO PASSANDO GRADIENTE"
         self.func_gradiente = self.gradiente_himmelblau if passar_gradiente else None
 
         self.iniciar_tempo()
-        resp = minimize(self.func_himmelblau, self.ponto_inicial, method=self.SCIPY_METODO, jac=self.func_gradiente)
+        resp = minimize(self.func_himmelblau, self.ponto_inicial, method=self.SCIPY_METODO, jac=self.func_gradiente, options=options)
         self.finalizar_tempo()
 
         self.ponto_final = resp.x

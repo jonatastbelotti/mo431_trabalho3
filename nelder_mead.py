@@ -16,5 +16,5 @@ class NelderMead(OtimizadorScipyMinimize):
 if __name__ == "__main__":
     conjugado = NelderMead()
 
-    conjugado.otimizar([[-4,-4],[-4,1],[4,-1]], passar_gradiente=False)
+    conjugado.otimizar([4, 4], passar_gradiente=False, options={'initial_simplex': [[-4,-4], [-4,1], [4,-1]]})
     conjugado.imprimir_resultado()

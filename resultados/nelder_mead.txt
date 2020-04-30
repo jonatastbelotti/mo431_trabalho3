@@ -1,7 +1,7 @@
 Método: Nelder-Mead NÃO PASSANDO GRADIENTE
-Ponto de mínimo: x=-3.7793126146050637 y=-3.2832099315893410
-Valor função: 0.00000002401263358021486580565017
-Número chamadas função: 174
+Ponto de mínimo: x=3.5844144912564206 y=-1.8481158805325921
+Valor função: 0.00000001068656699616864096994078
+Número chamadas função: 77
 Número chamadas gradiente:
-Número de iterações: 93
-Tempo execução: 0.0070538520812988 segundos
+Número de iterações: 40
+Tempo execução: 0.0030906200408936 segundos
